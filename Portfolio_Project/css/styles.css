@@ -1,0 +1,26 @@
+
+h1 {
+  color: #000000;
+  font-family: arial, verdana, sans-serif;
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+}
+
+#chicken_section, #beef_section, #sushi_section{
+	position: relative;
+	height: 700px;
+	background-color: #e7e7e7;
+	font-family: arial, verdana, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #5E6FFF;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
