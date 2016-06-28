@@ -1,3 +1,8 @@
+.container-fluid,.row{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 h1 {
   color: #000000;
@@ -19,6 +24,12 @@ h1 {
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #5E6FFF;
+}
+.navbar-default{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+  background-color: #c6ced4;
 }
 
 #nav-list a:hover {
