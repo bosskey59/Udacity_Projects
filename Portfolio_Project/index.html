@@ -9,6 +9,14 @@
     <title>Udacity Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+	<script>
+		function show(shown, hidden) {
+  	document.getElementById(shown).style.display='block';
+  	document.getElementById(hidden).style.display='none';
+  	return false;
+		}
+	</script>
   </head>
 <body>
   
@@ -39,46 +47,54 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Projects <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">About Me</a></li>
+	        <li class="active"><a href="#" onclick="return show('Page1','Page2');">Projects <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#" onclick="return show('Page2','Page1');">About Me</a></li>
 	        <li><a href="#">Contact Me</a></li>
 	      </ul>
 
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-
-		<div class="container-fluid green-background">
-		<div class="row">
-			<div class ="col-lg-4 col-md-4 col-sm-6">
-				<img class="img-responsive center-block" src="http://assets.bwbx.io/images/users/iqjWHBFdfxIU/i96nbn4JdjnY/v1/-1x-1.jpg" alt="Vinyl Records">
-				<p class="text-center">Mean Vinyl</p>
-			</div>
-			<div class ="col-lg-4 col-md-4 col-sm-6">
-				<img class="img-responsive center-block" src="http://whyquantumphysicists.com/wp-content/uploads/2014/09/pennies-Two.jpeg" alt="Pennies">
-				<p class="text-center">Penny Finds</p>
-			</div>
-			<div class ="col-lg-4 col-md-4 col-sm-12">
-				<img class="img-responsive center-block" src="http://www.designboom.com/weblog/images/images_2/lara/818_images/bulbrite/bulbrite04.jpg" alt="Light Bulbs">
-				<p class="text-center">Design Inspiration</p>
-			</div>			
-		</div>
-	</div>
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class ="col-lg-6 col-md-6 col-sm-12">
-				<div class="embed-responsive embed-responsive-16by9">
-  				<iframe class="embed-responsive-item center-block" src="https://www.youtube.com/embed/AIDU_tX1YUg" alt="Linear Actuator Gun Lock System from Texas A & M "></iframe>
+		
+		<div id="Page1">
+			<div class="container-fluid">
+			<div class="row">
+				<div class ="col-lg-4 col-md-4 col-sm-6">
+					<img class="img-responsive center-block" src="http://assets.bwbx.io/images/users/iqjWHBFdfxIU/i96nbn4JdjnY/v1/-1x-1.jpg" alt="Vinyl Records">
+					<p class="text-center">Mean Vinyl</p>
 				</div>
-				<p class="text-center">Diamond Weapons Safe.</p>
+				<div class ="col-lg-4 col-md-4 col-sm-6">
+					<img class="img-responsive center-block" src="http://whyquantumphysicists.com/wp-content/uploads/2014/09/pennies-Two.jpeg" alt="Pennies">
+					<p class="text-center">Penny Finds</p>
+				</div>
+				<div class ="col-lg-4 col-md-4 col-sm-12">
+					<img class="img-responsive center-block" src="http://www.designboom.com/weblog/images/images_2/lara/818_images/bulbrite/bulbrite04.jpg" alt="Light Bulbs">
+					<p class="text-center">Design Inspiration</p>
+				</div>			
 			</div>
-			<div class ="col-lg-6 col-md-6 col-sm-12">
-				<img class="img-responsive center-block" src="img/David_Bistro.png" alt="Restaurant Webpage Screenshot">
-				<p class="text-center"><a href="http://bosskey59.github.io/coursera-test/module_5_assignment/index.html">Coursera Restaurant Site.</a> </p>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class ="col-lg-6 col-md-6 col-sm-12">
+					<div class="embed-responsive embed-responsive-16by9">
+	  				<iframe class="embed-responsive-item center-block" src="https://www.youtube.com/embed/AIDU_tX1YUg" alt="Linear Actuator Gun Lock System from Texas A & M "></iframe>
+					</div>
+					<p class="text-center">Diamond Weapons Safe.</p>
+				</div>
+				<div class ="col-lg-6 col-md-6 col-sm-12">
+					<img class="img-responsive center-block" src="img/David_Bistro.png" alt="Restaurant Webpage Screenshot">
+					<p class="text-center"><a href="http://bosskey59.github.io/coursera-test/module_5_assignment/index.html">Coursera Restaurant Site.</a> </p>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div id="Page2" style="display:none">
+		<div class="container-fluid">
+    	<h1>Content of page 2</h1>
+    </div>
+  </div>
 
 	<footer class="footer">
     <div class="container">
