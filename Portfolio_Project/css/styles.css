@@ -1,8 +1,7 @@
 @media (min-width: 768px){
 	.padding_right{
-	padding-right: 60px;
-}
-
+		padding-right: 60px;
+	}
 }
 
 .container-fluid,.row{
@@ -48,8 +47,8 @@ body {
 }
 
 .icons{
-	height: 32px;
-	width: 32px;
+	max-height: 32px;
+	max-width: 32px;
 }
 
 h1 {
