@@ -17,9 +17,8 @@
 	padding-top: 30px;
 }
 
-
-.p_padding_top p{
-	padding-top: 10px;
+p{
+/*	padding-top: 10px;*/
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -60,7 +59,6 @@ h1 {
 h3{
 	font-family: 'Open Sans', sans-serif;	
 }
-
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
