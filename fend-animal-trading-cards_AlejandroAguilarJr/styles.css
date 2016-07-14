@@ -1,0 +1,60 @@
+/* add your CSS here */
+div{
+	font-family: arial, verdana, sans-serif;
+	border: solid;
+	border-color: #e7e7e7;
+	border-width: 1.5px;
+}
+h2{
+	margin-left: 10px;
+}
+ul{
+	list-style: none;
+	padding-left: 0px;
+}
+#overview{
+	width: 320px;
+	box-shadow: 5px 5px 15px  #888888;
+
+}
+
+#description{
+	width: 280px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size:12.75px;
+}
+
+#interesting_fact{
+	font-style: italic;
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  	color:transparent;
+ 	-webkit-background-clip: text;
+  	background-clip: text;
+}
+
+.italic_li{
+	font-style: italic;
+}
+.bold_label{
+	font-style: normal;
+	font-weight: bold;
+}
+
+#bear_pic{
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	border-color: #e7e7e7;
+	border-width: 1.5px;
+}
+
+

@@ -1,0 +1,50 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #2d3c49;
+}
+
+@media (max-width: 768px) {
+  .xs_center{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.container-fluid,
+.row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    color: #7d97ad; 
+    background-color: #7d97ad; /* Modern Browsers */
+/*    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.padding_top {
+  padding-top: 20px;
+}
+
+.limit_size {
+  max-width: 95px;
+  max-height: 95px;
+  padding-top: 25px;
+}
+
+.gray_color {
+  color: #7d97ad;
+}
