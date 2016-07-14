@@ -4,6 +4,7 @@
   <ul>
     <li>Animal Trading Card Project</li>
     <li>Portfolio Prjoject</li>
+    <li>Online Resume</li>
   </ul>
   
   
