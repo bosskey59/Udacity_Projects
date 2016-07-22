@@ -54,14 +54,14 @@ var projects={
 			"title":"Portfolio",
 			"dates":"June 2016-Present",
 			"description":" Project to demonsrate my work as a Front-End Web Developer. Technologies used: HTML, CSS, Javascript, and Bootstrap",
-			"images":[],
+			"images":["images/portfolio.png"],
 			"url":"https://bosskey59.github.io/Udacity_Projects/Portfolio_Project/index.html"
 		},
 		{
 			"title":"Diamond Weapons Safe",
 			"dates":"August 2013 - May 2014",
 			"description":"This was my senior design project at Texas A&M. I was responsible for the mechanical design of the project as well as some of the hardware/software design. Technologies used: C, SolidWorks, microcontroller, bluetooth, and TI's Code Composser",
-			"images":[],
+			"images":["images/iso_2_up.PNG", "images/iso_front.jpg"],
 			"url":"http://capstone.tamu.edu/Teams/Fall%20'13/XCS/"
 		}		
 	]
@@ -76,7 +76,11 @@ projects.display = function() {
         $(".project-entry:last").append(projectTitle.replace("#", projects.projects[project].url));
         $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));
         $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[project].description));
-        $(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[project].images));
+        for (image in projects.projects[project].images){
+        	$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[project].images[image]));	
+        }
+
+        	
     }
 };
 
