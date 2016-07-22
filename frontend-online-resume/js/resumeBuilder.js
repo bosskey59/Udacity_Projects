@@ -67,7 +67,7 @@ var projects={
 			"title":"Diamond Weapons Safe",
 			"dates":"August 2013 - May 2014",
 			"description":"This was my senior design project at Texas A&M. I was responsible for the mechanical design of the project as well as some of the hardware/software design. Technologies used: C, SolidWorks, microcontroller, bluetooth, and TI's Code Composser",
-			"images":["images/iso_2_up.PNG", "images/iso_front.jpg"],
+			"images":["images/iso_2_up.png", "images/iso_front.jpg"],
 			"url":"http://capstone.tamu.edu/Teams/Fall%20'13/XCS/"
 		}		
 	]
@@ -110,7 +110,7 @@ bio.display = function() {
 
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var headerName = HTMLheaderName.replace("%data%", bio.name);
-    $("#header").prepend(formattedRole,headerName);
+    $("#header").prepend(headerName,formattedRole);
     var bioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(bioPic);
 
