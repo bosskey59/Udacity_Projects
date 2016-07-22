@@ -18,6 +18,7 @@ h6 {
   overflow: auto;
 }
 
+.onlineClasses-entry,
 .education-entry,
 .work-entry,
 .project-entry {
@@ -26,7 +27,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #21b24b;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +35,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #484848;
   line-height: 29px;
   padding: 10px;
 }
@@ -100,16 +101,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #21b24b;
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
+.green {
+  background-color: #21b24b;
 }
 
-.orange-text {
-  color: #f5ae23;
+.green-text {
+  color: #21b24b;
 }
 
 .white-text {
@@ -147,6 +148,11 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.icons{
+  max-height: 32px;
+  max-width: 32px;
 }
 
 .biopic {
