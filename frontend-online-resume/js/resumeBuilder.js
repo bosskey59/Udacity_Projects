@@ -1,3 +1,14 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Conf
+
+
 var work={
 	"jobs":[
 		{
@@ -23,7 +34,7 @@ var work={
 		}		
 	]
 
-}
+};
 
 work.display = function() {
     for (var i = 0; i < work.jobs.length; i++) {
@@ -33,16 +44,11 @@ work.display = function() {
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
-        $(".work-entry:last").append(formattedEmployerTitle);
-
         var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
-        $(".work-entry:last").append(formattedDates);
-
         var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
-        $(".work-entry:last").append(formattedLocation);
-
-        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
-        $(".work-entry:last").append(formattedDescription);
+   		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+        
+        $(".work-entry:last").append(formattedEmployerTitle, formattedDates,formattedLocation,formattedDescription);
     }
 };
 
@@ -66,21 +72,20 @@ var projects={
 		}		
 	]
 
-}
+};
 
 projects.display = function() {
 
-    for (project in projects.projects) {
+ 
+    for (var i = 0; i < projects.projects.length; i++) {
         $("#projects").append(HTMLprojectStart);
-        var projectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-        $(".project-entry:last").append(projectTitle.replace("#", projects.projects[project].url));
-        $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));
-        $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[project].description));
-        for (image in projects.projects[project].images){
-        	$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[project].images[image]));	
-        }
-
-        	
+        var projectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+        $(".project-entry:last").append(projectTitle.replace("#", projects.projects[i].url));
+        $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[i].dates));
+        $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[i].description));
+        for (var x = 0; x < projects.projects[i].images.length; x++) {	
+        	$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[x]));	
+        }	
     }
 };
 
@@ -99,14 +104,13 @@ var bio={
 	"welcomeMessage":"Hello, this is my online resume and my first project in which I heavily use javascript. Feel free to contact me with any questions or if you need more info.",
 	"skills":["HTML","CSS","Javascript","Java","C","Bootstrap"],
 	"biopic":"images/headshot.jpg",
-}
+};
 
 bio.display = function() {
 
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    $("#header").prepend(formattedRole);
     var headerName = HTMLheaderName.replace("%data%", bio.name);
-    $("#header").prepend(headerName);
+    $("#header").prepend(formattedRole,headerName);
     var bioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(bioPic);
 
@@ -169,7 +173,7 @@ education.display = function() {
 
     $("#education").append(HTMLonlineClasses);
     $("#education").append(HTMLonlineClassesStart);
-    for (var i = 0; i < education.onlineCourses.length; i++) {
+    for (i = 0; i < education.onlineCourses.length; i++) {
         var classTitleSchool = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title) + HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
         $(".onlineClasses-entry").append(classTitleSchool.replace("#", education.onlineCourses[i].url));
 
