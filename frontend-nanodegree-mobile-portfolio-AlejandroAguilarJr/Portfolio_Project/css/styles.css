@@ -1,0 +1,94 @@
+@media (min-width: 768px){
+	.padding_right{
+		padding-right: 60px;
+	}
+}
+
+.container-fluid,.row{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header_color{
+	background-color: #21b24b;
+}
+.padding_top{
+	padding-top: 30px;
+}
+
+p{
+/*	padding-top: 10px;*/
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.shadow img:hover{
+	box-shadow:2px 3px 5px #21b24b;	
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+.footer {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 32px;
+  background-color: white;
+
+}
+
+.icons{
+	max-height: 32px;
+	max-width: 32px;
+}
+
+h1 {
+	font-size: 30px;
+  color: #000000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;	
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #21b24b;
+}
+.navbar-default{
+/*	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;*/
+  background-color: white;
+  border: none;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   background-color: #21b24b;
+   color: white;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
