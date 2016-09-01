@@ -8,12 +8,33 @@
 
   </head>
   <body>
-
+    
     <div id="map"></div>
 
+    <div class="left_navi">
+      <!-- //ko input search  -->
+      <input class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
 
+      <h4>Search results:</h4>
+      <ul data-bind="foreach: search()">
+        <li data-bind="text: title, click: $parent.setLocation"></li>
+      </ul>
+
+      <!-- <span style='display:block !important; width: 170px; text-align: center; font-family: sans-serif; font-size: 12px;'><a href='http://www.wunderground.com/cgi-bin/findweather/getForecast?query=Laredo, TX' title='Laredo, TX Weather Forecast'><img src='http://weathersticker.wunderground.com/weathersticker/miniWeather10/language/english/US/TX/Laredo.gif' alt='Find more about Weather in Laredo, TX' /></a></span> -->
+<!-- 
+      <h3>All items:</h3>
+      <ul data-bind="foreach: items">
+        <li data-bind="text: Name"></li>
+      </ul>  -->
+
+<!--       //and update list -->
+
+
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/knockout-3.4.0.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKd1ZSfDM1zvPvjizq0lfYAp_BXMb2L4&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKd1ZSfDM1zvPvjizq0lfYAp_BXMb2L4&callback=initMap"async defer></script>
   </body>
 </html>
