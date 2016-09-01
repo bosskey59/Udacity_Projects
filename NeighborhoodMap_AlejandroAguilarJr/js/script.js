@@ -116,6 +116,8 @@ var viewModel = function() {
 
 };
 
+// ajax request solved by referencing https://gist.github.com/mnemonicflow/1b90ef0d294c692d24458b8378054c81
+
 var getData= function(x){
 
     var yelp=markers[x].yelp;
