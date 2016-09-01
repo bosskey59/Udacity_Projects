@@ -9,6 +9,7 @@ function initMap() {
      });
 var infowindow = new google.maps.InfoWindow();
 
+    // function makes an array object of google markers for each location in markers
     function setMarker(location){
         
 
@@ -31,7 +32,7 @@ var infowindow = new google.maps.InfoWindow();
     };
 
     
-
+    // calls yelp api and stores desire data as well as creates array of google markers
     for(var i=0;i<markers.length;i++){
         getData(i); 
         markers[i].marker=setMarker(markers[i]);
@@ -40,7 +41,7 @@ var infowindow = new google.maps.InfoWindow();
 ko.applyBindings(new viewModel());
 }
 
-
+//user selected spots.
 var markers = [
 
 {
@@ -117,6 +118,7 @@ var viewModel = function() {
 };
 
 // ajax request solved by referencing https://gist.github.com/mnemonicflow/1b90ef0d294c692d24458b8378054c81
+//uses oauth to call yelp API
 
 var getData= function(x){
 
@@ -174,12 +176,14 @@ var getData= function(x){
       'cache': true,
       'dataType': 'jsonp',
       'callback': 'cb',
-      'success': function(data) {
+      success: function(data) {
         console.log(data);
         markers[x].url= data.url;
         markers[x].snippetImgURL= data.image_url;
-
-
+      },
+      error:function () {
+          console.log("yelp didn't work!!");
+          window.alert("yelp didn't retrieve data properly!");
       }
     });
 };
