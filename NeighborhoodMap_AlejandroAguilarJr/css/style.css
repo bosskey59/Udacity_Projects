@@ -19,12 +19,15 @@ html, body {
     overflow: hidden;
 }    
 
-/*.left_navi {
-    width: 280px;
-    height: 549px;
-    background-color: rgba(256,256,256,.9);
-    border: solid 2px orange;
+@media (max-width: 720px){
+
+
+.left_navi{
+    position: absolute;
+    top: 80%;  /* adjust value accordingly */
+    left: 0px;  /* adjust value accordingly */
+    width: 100%;
+    height: 20%;
     overflow: hidden;
-    position: fixed;
-    z-index: 1;
-}*/
+} 
+}
