@@ -25,7 +25,7 @@ var infowindow = new google.maps.InfoWindow();
                 infowindow.open(map, this);
                 map.panTo(location.position); 
                 marker.setAnimation(google.maps.Animation.BOUNCE);
-                setTimeout(function(){marker.setAnimation(null);}, 1450);
+                setTimeout(function(){marker.setAnimation(null);}, 1300);
 
               });
               return marker;

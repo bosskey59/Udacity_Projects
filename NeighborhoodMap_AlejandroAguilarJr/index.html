@@ -15,7 +15,6 @@
       <!-- //ko input search  -->
       <input placeholder="Search…" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
   
-<!--       <h5>Search results:</h5> -->
       <ul data-bind="foreach: search()">
         <li id="loc_list"data-bind="text: title, click: $parent.setLocation"></li>
       </ul>
