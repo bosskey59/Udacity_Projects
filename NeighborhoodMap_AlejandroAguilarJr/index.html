@@ -16,7 +16,7 @@
       <input placeholder="Search…" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
   
       <ul data-bind="foreach: search()">
-        <li id="loc_list"data-bind="text: title, click: $parent.setLocation"></li>
+        <li id="loc_list" data-bind="text: title, click:setLocation"></li>
       </ul>
       
 

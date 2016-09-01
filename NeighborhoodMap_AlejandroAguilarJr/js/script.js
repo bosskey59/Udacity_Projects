@@ -31,6 +31,10 @@ var infowindow = new google.maps.InfoWindow();
               return marker;
     };
 
+    //allows list to be clicked activing the info window for that list item
+    setLocation = function(clickedLocation) {
+        google.maps.event.trigger(clickedLocation.marker, 'click');
+    };
     
     // calls yelp api and stores desire data as well as creates array of google markers
     for(var i=0;i<markers.length;i++){
@@ -109,10 +113,7 @@ var viewModel = function() {
         });
     });    
 
-    //allows list to be clicked activing the info window for that list item
-    this.setLocation = function(clickedLocation) {
-        google.maps.event.trigger(clickedLocation.marker, 'click');
-    };
+
 
 
 };
