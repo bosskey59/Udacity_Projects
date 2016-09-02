@@ -45,6 +45,10 @@ var infowindow = new google.maps.InfoWindow();
 ko.applyBindings(new viewModel());
 }
 
+function mapserror() {
+  window.alert("Google Maps could not be loaded at this momennt! Sorry for the inconvienence."); 
+};
+
 //user selected spots.
 var markers = [
 
@@ -167,9 +171,10 @@ var getData= function(x){
 
     var parameterMap = OAuth.getParameterMap(message.parameters);
     parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature)
-    console.log(parameterMap);
 
-
+    var yelpRequestTimeout = setTimeout(function(){
+        window.alert("Yelp could not be reached!"); 
+    }, 4000);
 
     $.ajax({
       'url': yelp,
@@ -177,15 +182,11 @@ var getData= function(x){
       'cache': true,
       'dataType': 'jsonp',
       'callback': 'cb',
-      success: function(data) {
+    }).done(function (data) {
         console.log(data);
         markers[x].url= data.url;
         markers[x].snippetImgURL= data.image_url;
-      },
-      error:function () {
-          console.log("yelp didn't work!!");
-          window.alert("yelp didn't retrieve data properly!");
-      }
+        clearTimeout(yelpRequestTimeout);
     });
 };
 
