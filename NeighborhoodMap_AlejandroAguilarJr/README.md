@@ -9,3 +9,6 @@ How to Run:
 2) Open Index.html with a web browser.
 3) Enjoy!
 
+Credits:
+// ajax request solved by referencing https://gist.github.com/mnemonicflow/1b90ef0d294c692d24458b8378054c81
+
