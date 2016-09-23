@@ -105,6 +105,7 @@ var viewModel = function() {
     self.search = ko.computed(function() {
         for (var i = 0; i < markers.length; i++) {
             markers[i].marker.setVisible(true);
+            console.log(markers[i].marker)
         }
 
         return ko.utils.arrayFilter(self.locations(), function(loc) {

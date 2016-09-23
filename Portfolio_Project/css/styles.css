@@ -46,8 +46,11 @@ body {
 }
 
 .icons{
-	max-height: 32px;
-	max-width: 32px;
+  text-align: center;
+}
+
+.icon_color{
+  color: #21b24b;
 }
 
 h1 {
