@@ -10,9 +10,6 @@
 	margin-right: auto;
 }
 
-.header_color{
-	background-color: #21b24b;
-}
 .padding_top{
 	padding-top: 30px;
 }
@@ -24,7 +21,7 @@ p{
 }
 
 .shadow img:hover{
-	box-shadow:2px 3px 5px #21b24b;	
+	box-shadow:2px 3px 5px #2097C2;	
 }
 
 html {
@@ -47,10 +44,11 @@ body {
 
 .icons{
   text-align: center;
+  color: #2097C2;
 }
 
-.icon_color{
-  color: #21b24b;
+.icon_padding{
+  padding-right: 20px;
 }
 
 h1 {
@@ -65,7 +63,7 @@ h3{
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #21b24b;
+  border: 1px solid #2097C2;
 }
 .navbar-default{
 /*	max-width: 960px;
@@ -88,7 +86,7 @@ h3{
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-   background-color: #21b24b;
+   background-color: #2097C2;
    color: white;
 }
 
